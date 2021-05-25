@@ -5,9 +5,24 @@
 
 using System;
 
-Console.WriteLine("Want to guess my secret number?");
-Console.WriteLine("What is your guess?");
+main();
+// run main function
+void main()
+// all funcxtions are called in main
+{
 
-string guess = Console.ReadLine();
+    Console.WriteLine("Want to guess my secret number?");
+    Console.WriteLine("What is your guess?");
 
-Console.WriteLine($"You just guessed {guess}");
+    string userGuess = Console.ReadLine();
+    string correctNumber = "42";
+
+    if (userGuess == correctNumber)
+    {
+        Console.WriteLine("Yaaas Youz righttt!");
+    }
+    else
+    {
+        Console.WriteLine("Nah son, try again");
+    }
+}
